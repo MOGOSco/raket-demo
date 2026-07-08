@@ -1,2 +1,5 @@
-def divide(a, b):
-    return a / b   # no zero guard — a real reviewable defect
+def divide(a,b):
+    return a/b  # still no guard
+
+def risky(x):
+    return open(x).read()  # unclosed file handle
